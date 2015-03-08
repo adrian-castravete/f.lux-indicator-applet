@@ -107,7 +107,7 @@ class Indicator(object):
             elif theme == 'ubuntu-mono-light':
                 self.indicator.set_icon('fluxgui-light')
             else:
-                self.indicator.set_icon('fluxgui')
+                self.indicator.set_icon('fluxgui-dark')
 
         self.indicator.set_menu(self.create_menu())
 
@@ -117,6 +117,7 @@ class Indicator(object):
         self.add_menu_item("_Pause f.lux", self._toggle_pause,
                 menu, MenuItem=gtk.CheckMenuItem)
         self.add_menu_item("Prefere_nces", self._open_preferences, menu)
+        # self.add_menu_item("Credits", self._open_preferences, menu)
         self.add_menu_separator(menu)
         self.add_menu_item("Quit", self._quit, menu)
 

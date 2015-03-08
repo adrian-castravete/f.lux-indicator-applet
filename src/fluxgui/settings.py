@@ -25,9 +25,10 @@ class Settings(object):
             temperature_keys = {
                     '0':  '2700',
                     '1':  '3400',
-                    '2':  '4200',
-                    '3':  '5000',
-                    '4':  '6500',
+                    '2':  '3800',
+                    '3':  '4200',
+                    '4':  '5000',
+                    '5':  '6500',
             }
             if self._color in temperature_keys:
                 self.color = temperature_keys[self._color]
